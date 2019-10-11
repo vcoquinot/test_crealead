@@ -1,0 +1,43 @@
+/* body * { 
+    border: 1px solid black;
+}*/
+
+/* Sélection par type de balise */
+body {
+    background-color: white;
+}
+
+/*Sélection par héritage  */
+
+#main-nav ul li button {
+    background-color: #5A6268;
+    color:white;
+    margin: 10px 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#main-nav ul li {
+    list-style-type: none;
+    float: left;
+}
+
+/* sélection par pseudo classe */
+button:hover {
+    cursor: pointer;
+}
+
+button:before {
+    content: ">";
+    margin-right: 10px;
+}
+/* n'accepte pas d'élément flottant ni à droite ni à gauche */
+/*h2 {
+    clear: both;
+}*/
+
+#main-nav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
